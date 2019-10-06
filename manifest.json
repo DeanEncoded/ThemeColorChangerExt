@@ -1,0 +1,26 @@
+{
+    "name": "Theme Color Changer",
+    "version": "1.0",
+    "description": "This extension changes the theme color of any webpage. (This changes the color of the title bar on installed PWAs)",
+    "icons": { 
+        "16": "icon/icon16.png",
+        "48": "icon/icon48.png",
+       "128": "icon/icon128.png" },
+    "background": {
+        "scripts": [
+            "background.js"
+        ],
+        "persistent": false
+    },
+    "permissions": [
+        "storage",
+        "activeTab",
+        "declarativeContent",
+        "tabs",
+        "*://*/*"
+    ],
+    "browser_action": {
+        "default_popup": "configure.html"
+    },
+    "manifest_version": 2
+}
